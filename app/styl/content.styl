@@ -1,0 +1,575 @@
+//-----------main-caption
+
+.main-caption
+	padding-top 120px
+	width 100%
+	max-width 1400px
+	min-height 785px
+	background-color black
+	background url('../img/main-bg.png') center center no-repeat
+	background-size cover
+	color #fff
+	letter-spacing 1.5px
+	
+	&__header
+		margin 170px 0 30px 0
+		width 100%
+		font-weight 600
+		font-size 60px
+		text-align center
+	
+	&__subtitle
+		display block
+		font-size 22px
+		text-align center
+
+.main-buttons
+	position relative
+	display flex
+	justify-content center
+	margin-top 110px
+
+.main-buttons:after
+	content ''
+	position absolute
+	bottom -115px
+	left 50%
+	width 12px
+	height 12px
+	border solid #fff
+	border-width 0 4px 4px 0
+	transform translateX(-50%) rotate(45deg)
+	cursor pointer
+
+.button-more
+	width 220px
+	height 70px
+	color #fff
+	font-family 'Roboto', sans-serif
+	font-weight bold
+	font-size 20px
+	text-transform uppercase
+	background transparent
+	border 3px solid #fff
+	transition all 0.3s
+	
+	&--filled
+		background-color #00897b
+		border none
+
+.button-more:hover
+	background-color #3949ab
+	border none
+	
+.button-more + .button-more
+	margin-left 25px
+	
+//-----------about
+
+.about
+	padding 120px 0 100px
+
+.about-info
+	display flex
+	justify-content space-between
+	
+	&__item
+		display flex
+		flex-direction column
+		align-items center
+		padding 0 35px
+		max-width 370px
+		min-height 220px
+		line-height 22px
+		letter-spacing 1px
+
+	&__header
+		padding-bottom 20px
+		font-size 20px
+		font-weight 600
+	
+	&__text
+		text-align center
+
+	&__icon
+		margin 10px 0 20px 0
+		width 60px
+		height 60px
+	
+//-----------servicing
+
+.services
+	padding 165px 0 100px
+	background-color #e4fdf9
+	
+.services-list
+	display flex
+	flex-wrap wrap
+	justify-content center
+
+	&__link
+		display flex
+		flex-direction column
+		align-items center
+		margin 0 10px 20px 10px
+		padding 58px 0 50px
+		width 370px
+		background-color #fff
+		cursor url('../img/pointer.cur'), default
+		transition all 0.3s
+	
+	&__link:hover
+		color white
+		background-color #00897b
+		box-shadow 0 5px 4px rgba(0, 0, 0, .3)
+		
+	&__link:hover &__img-active
+		display block
+		
+	&__link:hover &__img
+		display none
+
+	&__container-img
+		width 56px
+		height 62px
+	
+	&__name
+		margin 35px 0 20px
+		font-size 20px
+		font-weight 600
+	
+	&__text
+		margin-bottom 45px
+		padding 0 50px 0
+		text-align center
+		line-height 25px
+		
+	&__img-active
+		display none
+	
+.all-button
+	padding 15px
+	color inherit
+	font-size 20px
+	font-weight 600
+	text-transform uppercase
+	background transparent
+	border 2px solid 
+	border-color inherit
+	cursor url('../img/pointer.cur'), default
+	transition all 0.3s
+	
+	&--solid
+		border 2px solid #00897b
+	
+	&--solid:hover
+		color #fff
+		background-color #00897b
+		cursor pointer
+
+//-----------portfolio
+
+.portfolio
+	padding 125px 0 135px
+	
+.portfolio-btn-list
+	display flex
+	justify-content center
+	margin-bottom 120px
+
+.all-button + .all-button
+	margin-left 20px
+	
+.works-list
+	display flex
+	flex-wrap wrap
+	justify-content center
+	margin-bottom 115px
+
+	&__item
+		margin 0 10px 20px 10px
+		width 370px
+	
+	&__img
+		width 370px
+		height 370px
+		background-size cover
+
+	&__item:nth-child(1) &__img
+		background url('../img/works-3.png') center no-repeat
+
+	&__item:nth-child(2) &__img
+		background url('../img/works-2.png') center no-repeat
+
+	&__item:nth-child(3) &__img
+		background url('../img/works-3.png') center no-repeat
+
+	&__item:nth-child(4) &__img
+		background url('../img/works-4.png') center no-repeat
+
+	&__item:nth-child(5) &__img
+		background url('../img/works-5.png') center no-repeat
+
+	&__item:nth-child(6) &__img
+		background url('../img/works-6.png') center no-repeat
+
+	&__img:hover .work-desc
+		visibility visible
+		background rgba(0, 0, 0, .6)
+		transition all 0.4s
+
+.work-desc
+	display flex
+	flex-direction column
+	justify-content center
+	visibility hidden
+	margin auto 0
+	height inherit
+	font-weight 600
+	text-align center
+	color #fff
+
+	&__title
+		font-size 20px
+		line-height 27px
+
+	&__subtitle
+		font-size 15px
+		line-height 20px
+
+.button-more--solid
+	background-color #00897b
+
+.button-container
+	display flex
+	justify-content center
+	margin 0 auto
+
+//-----------prices
+
+.prices
+	padding 125px 0
+	background-color #f0f1f1
+
+.pricing-list
+	display flex
+	flex-wrap wrap
+	justify-content center
+
+	&__item
+		margin 0 15px 30px 15px
+		width 370px
+		min-height 670px
+		background-color #fff
+
+	&__item:hover
+		box-shadow 0 5px 4px rgba(0, 0, 0, .3)
+		
+	&__item:hover .to-order
+		color #fff
+		background-color #00897b
+		text-transform uppercase
+	
+.pricing-tariff
+	padding-top 45px
+	min-height 209px
+	color #fff
+	background url('../img/prices-bg.png') center no-repeat
+
+	&__name
+		display block
+		margin-bottom 35px
+		text-align center
+		font-size 25px
+
+	&__value
+		display block
+		min-height 60px
+		text-align center
+		font-size 17px
+
+	&__value span:nth-child(1)
+		font-size 25px
+		vertical-align top
+	
+	&__value span:nth-child(2)
+		font-size 50px
+		line-height 45px
+		vertical-align bottom
+
+.pricing-about
+	display flex
+	flex-direction column
+	align-items center
+	max-width 370px
+	
+	&__item
+		display block
+		margin-top 25px
+		padding-bottom 10px
+		width 180px
+		height 40px
+		border 1px solid #bfbfbf
+		border-width 0 0 1px 0
+		font-size 17px
+		font-weight 300
+		text-align center
+		color #212121
+
+.to-order
+	display block
+	margin 65px auto 0
+	padding 15px
+	border 2px solid 
+	color #212121
+	font-family 'Open Sans', sans-serif
+	font-size 20px
+	font-weight 600
+	line-height 22px
+	background-color #fff
+	transition all 0.3s
+
+//-----------team
+
+.team
+	padding 125px 0
+	
+.team-list
+	display flex
+	flex-wrap wrap
+	justify-content space-around
+	
+	&__item
+		margin 0 10px 20px 10px
+		width 370px
+		min-height 540px
+
+	&__img
+		width 370px
+		height 320px
+		background-size cover
+		
+	&__img + &__name
+		margin-top 35px
+
+	&__name
+		font-size 20px
+		font-weight 600
+		text-align center
+		
+	&__name + &__job-title
+		margin-top 10px
+
+	&__job-title
+		text-align center
+		
+	&__job-title + .social
+		margin-top 30px
+		
+.social
+	display flex
+	justify-content center
+	align-items center
+	
+	&__link
+		display flex
+		justify-content center
+		align-items center
+		width 50px
+		height 50px
+		background-color #f0f1f1
+		border-radius 15px
+		transition all 0.3s
+		
+	&__link:hover
+		background-color #3949ab
+
+	&__link + &__link
+		margin-left 22px
+		
+.team-slider
+	display flex
+	justify-content center
+	align-items center
+
+	&__control
+		width 15px
+		height 15px
+		background-color #00897b
+		border-radius 50%
+		transition all 0.3s
+		
+	&__control:hover
+		background-color #3949ab
+		
+	&__control + &__control 
+		margin-left 10px
+		
+//-----------blog
+
+.blog
+	padding 125px 0
+	background-color #e4fdf9
+
+.post
+	display flex
+	justify-content space-between
+
+	&__img
+		width 48.71794871794872%
+		
+	&__img img
+		display block
+		object-fit cover
+
+	&__desc
+		padding 55px 110px 0 0
+		width 48.71794871794872%
+
+.blog-header
+	font-size 25px
+	font-weight 600
+	
+.blog-header:hover
+	color #00897b
+	cursor url('../img/blog-pointer.cur'), default
+
+.blog-header + .post-info
+	padding-top 20px
+	
+.post-info + p
+	padding-top 25px
+	
+.post-info
+	display flex
+	font-size 17px
+	font-weight 600
+	
+	&__icon
+		display block
+		margin-right 15px
+		width 17px
+		height 18px
+		transform translateY(1px)
+		
+	&__item
+		display flex
+		
+	&__item + &__item
+		margin-left 35px
+		
+.post + .button-container
+	margin-top 125px
+	
+//-----------footer
+
+.contacts
+	padding 125px 0 110px
+	min-height 1250px
+	color #fff
+	background #232222 url('../img/contact-bg.png') center no-repeat
+	background-size cover
+	
+.contact-us
+	display flex
+	justify-content space-around
+	flex-wrap wrap
+	margin 0 auto 25px
+	padding 0 15px
+	max-width 1060px
+	font-size 20px
+	font-weight 600
+	
+.contact-block
+	padding-top 25px
+	max-width 335px
+	min-height 270px
+	
+	&__icon
+		display flex
+		margin 0 auto 30px
+		width 105px
+		height 105px
+		background-color #3949ab
+		border-radius 50%
+		
+	&__icon img
+		margin auto
+		
+	&__text
+		margin 0 auto
+		max-width 265px
+		text-align center
+		letter-spacing 1px
+		line-height 30px
+		
+	&__text span
+		display block
+		
+.form-container
+	display flex
+	justify-content space-between
+	flex-wrap wrap
+
+.feedback
+	padding 0 15px
+	max-width 1060px
+
+	&__entry
+		padding 30px 15px
+		font-size 20px
+		line-height 28px
+		border 3px solid #fff
+		border-radius 15px
+		letter-spacing 1px
+		
+	&__entry:focus 
+		border 3px solid #3949ab
+
+	&__login
+		margin-bottom 33px
+		width 48.54368932038835%
+
+	&__message
+		width 100%
+		min-height 323px
+		resize none
+		
+	&__message + .btn-container
+		margin-top 40px
+
+	&__btn
+		color #212121
+		letter-spacing 1px
+		background-color #fff
+		border-radius 15px
+		cursor pointer
+		
+	&__btn:hover
+		color #fff
+		
+.btn-container
+	display flex
+	justify-content flex-end
+	width 100%
+		
+:placeholder
+	color #212121
+
+:focus::placeholder
+	color transparent
+	
+//-----------footer
+
+.main-footer
+	font-family 'Roboto', sans-serif
+	font-size 20px
+	letter-spacing 1px
+	
+.copyright
+	min-height 63px
+	font-size 20px
+	font-weight 700
+	text-align center
+	line-height 63px
+	letter-spacing 1px

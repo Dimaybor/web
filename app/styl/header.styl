@@ -1,0 +1,45 @@
+.main-header
+	position fixed
+	z-index 999
+	width 100%
+	max-width 1400px
+	background-color white
+
+.header-container
+	display flex
+	justify-content space-between
+	align-items center
+
+.logo
+	font-family 'Open Sans', sans-serif
+	font-size 25px
+	font-weight 700
+
+.main-menu
+	display flex
+	align-items center
+	font-family 'Open Sans', sans-serif
+	font-size 20px
+	line-height 22px
+	font-weight 600
+	
+	&__item
+		display flex
+		align-items center
+		height 120px
+
+	&__link:hover
+		color #00897b
+		transition all 0.3s
+
+	&__item + .main-menu__item
+		margin-left 40px
+
+.main-nav
+	display flex
+	align-items center
+
+.search-link
+	display block
+	width 19px
+	height 19px

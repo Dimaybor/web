@@ -1,0 +1,332 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name='viewport' content='width=device-width, initial-scale=1')
+		title Web development project
+		link(rel='stylesheet' type='text/css' href='css/normalize.css')
+		link(rel='stylesheet' type='text/css' href='css/main.css')
+		link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,700')
+	body
+		include header
+		section.main-caption
+			.wrapper
+				h1.main-caption__header Web development project
+				p.main-caption__subtitle Very suitable to support all web development
+				.main-buttons
+					button.button-more our services
+					button.button-more.button-more--filled hire is now
+		section.about
+			.wrapper
+				.section-header
+					h2.secondary-header About Us
+					p.secondary-subtitle Lorem ipsum dolor sit amet, 	consectetur adipisicing elit, sed do eiusmod tempor 	incididunt ut labore et dolore magna aliqua. Ut emin ad minim veniam.
+				.about-info
+					.about-info__item
+						.about-info__icon
+							img(src='img/internet.png' alt='alt')
+						p.about-info__header Awesome Icons
+						p.about-info__text Lorem ipsum dolor sit amet, 	consectetur adipisicing elit, sed do eiusmod tempor
+					.about-info__item
+						.about-info__icon
+							img(src='img/transfer.png' alt='alt')
+						p.about-info__header One Page
+						p.about-info__text Lorem ipsum dolor sit amet, 	consectetur adipisicing elit, sed do eiusmod tempor
+					.about-info__item
+						.about-info__icon
+							img(src='img/head.png' alt='alt')
+						p.about-info__header Fully Responsive
+						p.about-info__text Lorem ipsum dolor sit amet, 	consectetur adipisicing elit, sed do eiusmod tempor
+		section.services
+			.wrapper
+				.section-header
+					h2.secondary-header Our Services
+					p.secondary-subtitle Lorem ipsum dolor sit amet, 	consectetur adipisicing elit, sed do eiusmod tempor 	incididunt ut labore et dolore magna aliqua. Ut emin ad minim veniam.
+				ul.services-list
+					li.services-list__item
+						a.services-list__link(href='#')
+							.services-list__container-img
+								img.services-list__img(src='img/phone.png' alt='alt')
+								img.services-list__img-active(src='img/phone-white.png' alt='alt')
+							.services-list__name Research
+							p.services-list__text At vero eos et accusamus et 	iusto odio dignissimos ducimus qui blanditiis 	praesentium voluptatum iti atque corrupti quos.
+							button.all-button read more
+					li.services-list__item
+						a.services-list__link(href='#')
+							.services-list__container-img
+								img.services-list__img(src='img/phone.png' alt='alt')
+								img.services-list__img-active(src='img/phone-white.png' alt='alt')
+							.services-list__name Portfolio
+							p.services-list__text At vero eos et accusamus et 	iusto odio dignissimos ducimus qui blanditiis 	praesentium voluptatum iti atque corrupti quos.
+							button.all-button read more
+					li.services-list__item
+						a.services-list__link(href='#')
+							.services-list__container-img
+								img.services-list__img(src='img/phone.png' alt='alt')
+								img.services-list__img-active(src='img/phone-white.png' alt='alt')
+							.services-list__name Support
+							p.services-list__text At vero eos et accusamus et 	iusto odio dignissimos ducimus qui blanditiis 	praesentium voluptatum iti atque corrupti quos.
+							button.all-button read more
+					li.services-list__item
+						a.services-list__link(href='#')
+							.services-list__container-img
+								img.services-list__img(src='img/phone.png' alt='alt')
+								img.services-list__img-active(src='img/phone-white.png' alt='alt')
+							.services-list__name Documentation
+							p.services-list__text At vero eos et accusamus et 	iusto odio dignissimos ducimus qui blanditiis 	praesentium voluptatum iti atque corrupti quos.
+							button.all-button read more
+					li.services-list__item
+						a.services-list__link(href='#')
+							.services-list__container-img
+								img.services-list__img(src='img/phone.png' alt='alt')
+								img.services-list__img-active(src='img/phone-white.png' alt='alt')
+							.services-list__name Development
+							p.services-list__text At vero eos et accusamus et 	iusto odio dignissimos ducimus qui blanditiis 	praesentium voluptatum iti atque corrupti quos.
+							button.all-button read more
+					li.services-list__item
+						a.services-list__link(href='#')
+							.services-list__container-img
+								img.services-list__img(src='img/phone.png' alt='alt')
+								img.services-list__img-active(src='img/phone-white.png' alt='alt')
+							.services-list__name Design
+							p.services-list__text At vero eos et accusamus et 	iusto odio dignissimos ducimus qui blanditiis 	praesentium voluptatum iti atque corrupti quos.
+							button.all-button read more
+		section.portfolio
+			.wrapper
+				.section-header
+					h2.secondary-header Lastest Works
+					p.secondary-subtitle Lorem ipsum dolor sit amet, 	consectetur adipisicing elit, sed do eiusmod tempor 	incididunt ut labore et dolore magna aliqua. Ut emin ad minim veniam.
+				.portfolio-btn-list
+					button.all-button.all-button--solid all
+					button.all-button.all-button--solid web design
+					button.all-button.all-button--solid ui/ux design
+					button.all-button.all-button--solid mockups
+				ul.works-list
+					li.works-list__item
+						a.works-list__link(href='#')
+							.works-list__img
+								p.work-desc
+									span.work-desc__title Hand Watch 
+									span.work-desc__subtitle ui/ux design
+					li.works-list__item
+						a.works-list__link(href='#')
+							.works-list__img
+								p.work-desc
+									span.work-desc__title Hand Watch 
+									span.work-desc__subtitle ui/ux design
+					li.works-list__item
+						a.works-list__link(href='#')
+							.works-list__img
+								p.work-desc
+									span.work-desc__title Hand Watch 
+									span.work-desc__subtitle ui/ux design
+					li.works-list__item
+						a.works-list__link(href='#')
+							.works-list__img
+								p.work-desc
+									span.work-desc__title Hand Watch 
+									span.work-desc__subtitle ui/ux design
+					li.works-list__item
+						a.works-list__link(href='#')
+							.works-list__img
+								p.work-desc
+									span.work-desc__title Hand Watch 
+									span.work-desc__subtitle ui/ux design
+					li.works-list__item
+						a.works-list__link(href='#')
+							.works-list__img
+								p.work-desc
+									span.work-desc__title Hand Watch 
+									span.work-desc__subtitle ui/ux design
+				.button-container
+					button.button-more.button-more--solid view all
+		section.prices
+			.wpapper
+				.section-header
+					h2.secondary-header Pricing Plan
+					p.secondary-subtitle Lorem ipsum dolor sit amet, 	consectetur adipisicing elit, sed do eiusmod tempor 	incididunt ut labore et dolore magna aliqua. Ut emin ad minim veniam.
+				.pricing-list
+					a.pricing-list__item(href='#')
+						.pricing-tariff
+							p.pricing-tariff__name Free Trail
+							p.pricing-tariff__value 
+								span $ 
+								span 00 
+								|	per month
+						ul.pricing-about
+							li.pricing-about__item 30 Free Trail
+							li.pricing-about__item 5 Free Projects
+							li.pricing-about__item PHP 5 Enabled
+							li.pricing-about__item 24/7 Suports
+						button.to-order Order Now
+					a.pricing-list__item(href='#')
+						.pricing-tariff
+							p.pricing-tariff__name Basic
+							p.pricing-tariff__value
+								span $ 
+								span 50 
+								|	per month
+						ul.pricing-about
+							li.pricing-about__item 30 Free Trail
+							li.pricing-about__item 5 Free Projects
+							li.pricing-about__item PHP 5 Enabled
+							li.pricing-about__item 24/7 Suports
+						button.to-order Order Now
+					a.pricing-list__item(href='#')
+						.pricing-tariff
+							p.pricing-tariff__name Ultimates
+							p.pricing-tariff__value 
+								span $ 
+								span 99 
+								|	per month
+						ul.pricing-about
+							li.pricing-about__item 30 Free Trail
+							li.pricing-about__item 5 Free Projects
+							li.pricing-about__item PHP 5 Enabled
+							li.pricing-about__item 24/7 Suports
+						button.to-order Order Now
+		section.team
+			.wrapper
+				.section-header
+					h2.secondary-header Our Team Member
+					p.secondary-subtitle Lorem ipsum dolor sit amet, 	consectetur adipisicing elit, sed do eiusmod tempor 	incididunt ut labore et dolore magna aliqua. Ut emin ad minim veniam.
+				.team-list
+					.team-list__item
+						.team-list__img
+							img(src='img/member-1.png' alt='alt')
+						p.team-list__name John Doe
+						p.team-list__job-title General Manager
+						.social
+							a.social__link(href='#' title='Facebook')
+								img(src='img/facebook.png' alt='alt')
+							a.social__link(href='#' title='Twitter')
+								img(src='img/twitter.png' alt='alt')
+							a.social__link(href='#' title='Messenger')
+								img(src='img/messenger.png' alt='alt')
+							a.social__link(href='#' title='Facebook')
+								img(src='img/ball.png' alt='alt')
+					.team-list__item
+						.team-list__img
+							img(src='img/member-2.png' alt='alt')
+						p.team-list__name Alexa Biru
+						p.team-list__job-title Office Director
+						.social
+							a.social__link(href='#' title='Facebook')
+								img(src='img/facebook.png' alt='alt')
+							a.social__link(href='#' title='Twitter')
+								img(src='img/twitter.png' alt='alt')
+							a.social__link(href='#' title='Messenger')
+								img(src='img/messenger.png' alt='alt')
+							a.social__link(href='#' title='Facebook')
+								img(src='img/ball.png' alt='alt')
+					.team-list__item
+						.team-list__img
+							img(src='img/member-3.png' alt='alt')
+						p.team-list__name Ronobir sing
+						p.team-list__job-title Admin
+						.social
+							a.social__link(href='#' title='Facebook')
+								img(src='img/facebook.png' alt='alt')
+							a.social__link(href='#' title='Twitter')
+								img(src='img/twitter.png' alt='alt')
+							a.social__link(href='#' title='Messenger')
+								img(src='img/messenger.png' alt='alt')
+							a.social__link(href='#' title='Facebook')
+								img(src='img/ball.png' alt='alt')
+				.team-slider
+					a.team-slider__control(href='#')
+					a.team-slider__control(href='#')
+					a.team-slider__control(href='#')
+		article.blog
+			.wrapper
+				.section-header
+					h2.secondary-header Blog
+					p.secondary-subtitle Lorem ipsum dolor sit amet, 	consectetur adipisicing elit, sed do eiusmod tempor 	incididunt ut labore et dolore magna aliqua. Ut emin ad minim veniam.
+				.blog-posts
+					.post
+						.post__img
+							a(href='#')
+								img(src='img/blog-1.png' alt='alt')
+						.post__desc
+							a.blog-header(href='#') SEO Quis Vestibulum
+							.post-info
+								p.post-info__item
+									span.post-info__icon
+										img(src='img/calendar.png' alt='alt')
+									|	14.07.2017
+								p.post-info__item
+									span.post-info__icon
+										img(src='img/file.png' alt='alt')
+									|	Development
+							p Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+					.post
+						.post__desc
+							a.blog-header(href='#') SEO Quis Vestibulum
+							.post-info
+								p.post-info__item
+									span.post-info__icon
+										img(src='img/calendar.png' alt='alt')
+									|	14.07.2017
+								p.post-info__item
+									span.post-info__icon
+										img(src='img/file.png' alt='alt')
+									|	Development
+							p Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+						.post__img
+							a(href='#')
+								img(src='img/blog-2.png' alt='alt')
+					.post
+						.post__img
+							a(href='#')
+								img(src='img/blog-3.png' alt='alt')
+						.post__desc
+							a.blog-header(href='#') SEO Quis Vestibulum
+							.post-info
+								p.post-info__item
+									span.post-info__icon
+										img(src='img/calendar.png' alt='alt')
+									|	14.07.2017
+								p.post-info__item
+									span.post-info__icon
+										img(src='img/file.png' alt='alt')
+									|	Development
+							p Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat...
+					.button-container
+						button.button-more.button-more--solid more view
+		section.contacts
+			.wrapper
+				.section-header
+					h2.secondary-header Contact Us
+					p.secondary-subtitle Lorem ipsum dolor sit amet, 	consectetur adipisicing elit, sed do eiusmod tempor 	incididunt ut labore et dolore magna aliqua. Ut emin ad minim veniam.
+				.contact-us.inner-wrap
+					.contact-block
+						.contact-block__icon
+							img(src='img/pos.png' alt='alt')
+						p.contact-block__text
+							span Nobinagar savar, Dhaka Bangladesh
+					.contact-block
+						.contact-block__icon
+							img(src='img/phone-call.png' alt='alt')
+						p.contact-block__text
+							span +8801743331996
+							span +8801928737807
+					.contact-block
+						.contact-block__icon
+							img(src='img/mail.png' alt='alt')
+						p.contact-block__text
+							span quickmasud@gmail.com
+							span quickmasud@yahoo.com
+				.feedback
+					form(action='#' method='post')
+						.form-container
+							input.feedback__entry.feedback__login(type='text' autocomplete='on' placeholder='Your NAME')
+							input.feedback__entry.feedback__login(type='email' autocomplete='on' name='login' placeholder='Your Email')
+							textarea.feedback__entry.feedback__message(name='comment' placeholder='Write Massage')
+							.btn-container
+								input.feedback__btn.button-more(type='submit' value='send')
+		footer.main-footer 
+			p.copyright All rights Reserved © 2017
+
+
+
+		script(src='js/main.js')
