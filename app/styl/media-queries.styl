@@ -1,0 +1,53 @@
+@media screen and (max-width: 1023px)
+
+  .main-header
+    min-height 80px
+
+  .menu-open
+    display block
+    
+  .open-nav
+    position fixed
+    left -100vw
+    flex-direction column
+    margin-top 80px
+    transition all 0.3s
+
+  .open-nav--active
+    transform translateX(100vw)
+    
+  .main-menu
+    flex-direction column
+    min-width 50vw
+    background-color #DCDCDC
+    
+    &__item
+      width 100%
+      min-height 60px
+      transition all 0.3s
+    
+    &__item + &__item
+      margin-left 0
+      
+    &__item:hover
+      background-color #99CCCC
+      
+    &__link
+      display flex
+      justify-content center
+      align-items center
+      width 100%
+      height 100%
+    
+  .main-nav
+    width 100%
+    max-width 100%
+
+  .header-container
+    flex-direction column
+    
+  .logo
+    position fixed
+    top 25px
+    right 25px
+    
