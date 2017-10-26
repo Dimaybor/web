@@ -1,5 +1,7 @@
 @media screen and (max-width: 1023px)
 
+  //------------------------------------header
+    
   .main-header
     min-height 80px
 
@@ -9,12 +11,12 @@
   .open-nav
     position fixed
     left -100vw
-    flex-direction column
+    align-items flex-start
     margin-top 80px
     transition all 0.3s
 
-  .open-nav--active
-    transform translateX(100vw)
+    &--active
+      transform translateX(100vw)
     
   .main-menu
     flex-direction column
@@ -51,3 +53,16 @@
     top 25px
     right 25px
     
+  //----------------------main-caption-------------------------
+    
+  .main-caption__header
+    font-size 50px
+    
+  //----------------------about-------------------------
+      
+  .about-info
+    flex-wrap wrap
+    justify-content space-around
+    
+    &__item
+      margin-bottom 30px
