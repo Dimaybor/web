@@ -1,6 +1,6 @@
 @media screen and (max-width: 1023px)
 
-  //------------------------------------header
+  //-------------------------header----------------------
     
   .main-header
     min-height 80px
@@ -39,7 +39,7 @@
       justify-content center
       align-items center
       width 100%
-      height 100%
+      min-height 60px
     
   .main-nav
     width 100%
@@ -53,10 +53,13 @@
     top 25px
     right 25px
     
-  //----------------------main-caption-------------------------
+  //----------------------main-caption------------------
     
-  .main-caption__header
-    font-size 50px
+  .main-caption
+    padding-top 80px
+
+    &__header
+      font-size 50px
     
   //----------------------about-------------------------
       
@@ -66,3 +69,70 @@
     
     &__item
       margin-bottom 30px
+      
+@media screen and (max-width: 767px)
+
+  //----------------------header------------------
+  .main-caption__header
+    margin-top 100px
+  
+  .all-button
+    padding 10px
+    font-size 15px
+    
+  //----------------------blog------------------
+  .post
+    flex-direction column
+    align-items center
+    
+    &__img
+      max-width 570px
+      width 100%
+      
+    &__desc
+      padding 20px
+      max-width 570px
+      width 100%
+      
+    &--order &__desc 
+      order 1
+      
+  .post + .button-container
+    margin-top 30px
+  
+  //----------------------contacts------------------
+  .contact-block
+    min-height 230px
+
+  .feedback__login
+    margin-bottom 20px
+    width 100%
+    
+  .feedback__entry
+    padding 15px 10px
+    
+  .feedback__btn
+    width 170px
+    height 60px
+
+
+    
+@media screen and (max-width: 479px)
+
+  .main-menu
+    width 100vw
+    
+  .button-more
+    min-height 60px
+    font-size 17px
+    
+  .main-caption
+    min-height 740px  
+
+    &__header
+      margin-top 50px
+      font-size 40px
+    
+    &__subtitle
+      font-size 18px
+    
