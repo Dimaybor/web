@@ -1,7 +1,6 @@
 //-----------main-caption
 
 .main-caption
-	padding-top 120px
 	width 100%
 	max-width 1400px
 	min-height 785px
@@ -11,6 +10,9 @@
 	color #fff
 	letter-spacing 1.5px
 	
+	&--indent 
+		padding-top 120px
+
 	&__header
 		margin 170px 0 30px 0
 		width 100%
@@ -52,7 +54,7 @@
 	text-transform uppercase
 	background transparent
 	border 3px solid #fff
-	transition all 0.3s
+	transition all 0.3s linear
 	
 	&--filled
 		background-color #00897b
@@ -119,7 +121,7 @@
 		width 370px
 		background-color #fff
 		cursor url('../img/pointer.cur'), default
-		transition all 0.3s
+		transition all 0.3s linear
 	
 	&__link:hover
 		color white
@@ -160,10 +162,10 @@
 	border 2px solid 
 	border-color inherit
 	cursor url('../img/pointer.cur'), default
-	transition all 0.3s
 	
 	&--solid
 		border 2px solid #00897b
+		transition all 0.3s linear
 	
 	&--solid:hover
 		color #fff
@@ -236,9 +238,6 @@
 		font-size 15px
 		line-height 20px
 
-.button-more--solid
-	background-color #00897b
-
 .button-container
 	display flex
 	justify-content center
@@ -267,7 +266,18 @@
 		color #fff
 		background-color #00897b
 		text-transform uppercase
-	
+		animation extinction 0.3s ease-in-out
+
+@keyframes extinction
+	0%
+		opacity 0
+		
+	50%
+		opacity 0.5	
+		
+	100%
+		opacity 1
+
 .pricing-tariff
 	padding-top 45px
 	min-height 209px
@@ -373,7 +383,7 @@
 		height 50px
 		background-color #f0f1f1
 		border-radius 15px
-		transition all 0.3s
+		transition all 0.3s linear
 		
 	&__link:hover
 		background-color #3949ab
