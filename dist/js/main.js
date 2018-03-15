@@ -19,4 +19,12 @@ $(document).ready(function() {
     $('body,html').animate({scrollTop: top}, 500);
   });
 
+  $('.team-list').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+  });
+
 });

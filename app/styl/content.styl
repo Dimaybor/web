@@ -348,9 +348,13 @@
 	flex-wrap wrap
 	justify-content space-around
 	
+	li
+		outline none
+	
 	&__item
 		margin 0 10px 20px 10px
 		min-height 540px
+		outline none
 
 	&__img
 		width 370px
@@ -394,24 +398,6 @@
 
 	&__link + &__link
 		margin-left 22px
-		
-.team-slider
-	display flex
-	justify-content center
-	align-items center
-
-	&__control
-		width 15px
-		height 15px
-		background-color #00897b
-		border-radius 50%
-		transition all 0.3s
-		
-	&__control:hover
-		background-color #3949ab
-		
-	&__control + &__control 
-		margin-left 10px
 		
 //-----------blog
 

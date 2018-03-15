@@ -5,8 +5,10 @@ html(lang="en")
 		meta(name='viewport' content='width=device-width, initial-scale=1')
 		title Web development project
 		link(rel='stylesheet' type='text/css' href='css/normalize.css')
+		link(rel='stylesheet' type='text/css' href='css/slick.css')
 		link(rel='stylesheet' type='text/css' href='css/main.css')
-		link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,700')
+		link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700')
+		link(rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:400,700')
 	body
 		include header
 		section#scroll-home.main-caption
@@ -190,53 +192,67 @@ html(lang="en")
 				.section-header
 					h2.secondary-header Our Team Member
 					p.secondary-subtitle Lorem ipsum dolor sit amet, 	consectetur adipisicing elit, sed do eiusmod tempor 	incididunt ut labore et dolore magna aliqua. Ut emin ad minim veniam.
-				.team-list
-					.team-list__item
-						.team-list__img
-							img(src='img/member-1.png' alt='alt')
-						p.team-list__name John Doe
-						p.team-list__job-title General Manager
-						.social
-							a.social__link(href='#' title='Facebook')
-								img(src='img/facebook.png' alt='alt')
-							a.social__link(href='#' title='Twitter')
-								img(src='img/twitter.png' alt='alt')
-							a.social__link(href='#' title='Messenger')
-								img(src='img/messenger.png' alt='alt')
-							a.social__link(href='#' title='Facebook')
-								img(src='img/ball.png' alt='alt')
-					.team-list__item
-						.team-list__img
-							img(src='img/member-2.png' alt='alt')
-						p.team-list__name Alexa Biru
-						p.team-list__job-title Office Director
-						.social
-							a.social__link(href='#' title='Facebook')
-								img(src='img/facebook.png' alt='alt')
-							a.social__link(href='#' title='Twitter')
-								img(src='img/twitter.png' alt='alt')
-							a.social__link(href='#' title='Messenger')
-								img(src='img/messenger.png' alt='alt')
-							a.social__link(href='#' title='Facebook')
-								img(src='img/ball.png' alt='alt')
-					.team-list__item
-						.team-list__img
-							img(src='img/member-3.png' alt='alt')
-						p.team-list__name Ronobir sing
-						p.team-list__job-title Admin
-						.social
-							a.social__link(href='#' title='Facebook')
-								img(src='img/facebook.png' alt='alt')
-							a.social__link(href='#' title='Twitter')
-								img(src='img/twitter.png' alt='alt')
-							a.social__link(href='#' title='Messenger')
-								img(src='img/messenger.png' alt='alt')
-							a.social__link(href='#' title='Facebook')
-								img(src='img/ball.png' alt='alt')
-				.team-slider
-					a.team-slider__control(href='#')
-					a.team-slider__control(href='#')
-					a.team-slider__control(href='#')
+				ul.team-list
+					li
+						.team-list__item
+							.team-list__img
+								img(src='img/member-1.png' alt='alt')
+							p.team-list__name John Doe
+							p.team-list__job-title General Manager
+							.social
+								a.social__link(href='#' title='Facebook')
+									img(src='img/facebook.png' alt='alt')
+								a.social__link(href='#' title='Twitter')
+									img(src='img/twitter.png' alt='alt')
+								a.social__link(href='#' title='Messenger')
+									img(src='img/messenger.png' alt='alt')
+								a.social__link(href='#' title='Facebook')
+									img(src='img/ball.png' alt='alt')
+					li
+						.team-list__item
+							.team-list__img
+								img(src='img/member-2.png' alt='alt')
+							p.team-list__name Alexa Biru
+							p.team-list__job-title Office Director
+							.social
+								a.social__link(href='#' title='Facebook')
+									img(src='img/facebook.png' alt='alt')
+								a.social__link(href='#' title='Twitter')
+									img(src='img/twitter.png' alt='alt')
+								a.social__link(href='#' title='Messenger')
+									img(src='img/messenger.png' alt='alt')
+								a.social__link(href='#' title='Facebook')
+									img(src='img/ball.png' alt='alt')
+					li
+						.team-list__item
+							.team-list__img
+								img(src='img/member-3.png' alt='alt')
+							p.team-list__name Ronobir sing
+							p.team-list__job-title Admin
+							.social
+								a.social__link(href='#' title='Facebook')
+									img(src='img/facebook.png' alt='alt')
+								a.social__link(href='#' title='Twitter')
+									img(src='img/twitter.png' alt='alt')
+								a.social__link(href='#' title='Messenger')
+									img(src='img/messenger.png' alt='alt')
+								a.social__link(href='#' title='Facebook')
+									img(src='img/ball.png' alt='alt')
+					li
+						.team-list__item
+							.team-list__img
+								img(src='img/member-3.png' alt='alt')
+							p.team-list__name Ronobir sing
+							p.team-list__job-title Admin
+							.social
+								a.social__link(href='#' title='Facebook')
+									img(src='img/facebook.png' alt='alt')
+								a.social__link(href='#' title='Twitter')
+									img(src='img/twitter.png' alt='alt')
+								a.social__link(href='#' title='Messenger')
+									img(src='img/messenger.png' alt='alt')
+								a.social__link(href='#' title='Facebook')
+									img(src='img/ball.png' alt='alt')
 		article#scroll-blog.blog.sections-indent
 			.wrapper
 				.section-header
@@ -327,4 +343,5 @@ html(lang="en")
 		footer.main-footer 
 			p.copyright All rights Reserved © 2017
 		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+		script(src='js/slick.min.js')
 		script(src='js/main.js')

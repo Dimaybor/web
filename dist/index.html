@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Web development project</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Roboto:400,700">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
   </head>
   <body>
     <header class="main-header">
@@ -192,27 +194,40 @@
           <h2 class="secondary-header">Our Team Member</h2>
           <p class="secondary-subtitle">Lorem ipsum dolor sit amet, 	consectetur adipisicing elit, sed do eiusmod tempor 	incididunt ut labore et dolore magna aliqua. Ut emin ad minim veniam.</p>
         </div>
-        <div class="team-list">
-          <div class="team-list__item">
-            <div class="team-list__img"><img src="img/member-1.png" alt="alt"></div>
-            <p class="team-list__name">John Doe</p>
-            <p class="team-list__job-title">General Manager</p>
-            <div class="social"><a class="social__link" href="#" title="Facebook"><img src="img/facebook.png" alt="alt"></a><a class="social__link" href="#" title="Twitter"><img src="img/twitter.png" alt="alt"></a><a class="social__link" href="#" title="Messenger"><img src="img/messenger.png" alt="alt"></a><a class="social__link" href="#" title="Facebook"><img src="img/ball.png" alt="alt"></a></div>
-          </div>
-          <div class="team-list__item">
-            <div class="team-list__img"><img src="img/member-2.png" alt="alt"></div>
-            <p class="team-list__name">Alexa Biru</p>
-            <p class="team-list__job-title">Office Director</p>
-            <div class="social"><a class="social__link" href="#" title="Facebook"><img src="img/facebook.png" alt="alt"></a><a class="social__link" href="#" title="Twitter"><img src="img/twitter.png" alt="alt"></a><a class="social__link" href="#" title="Messenger"><img src="img/messenger.png" alt="alt"></a><a class="social__link" href="#" title="Facebook"><img src="img/ball.png" alt="alt"></a></div>
-          </div>
-          <div class="team-list__item">
-            <div class="team-list__img"><img src="img/member-3.png" alt="alt"></div>
-            <p class="team-list__name">Ronobir sing</p>
-            <p class="team-list__job-title">Admin</p>
-            <div class="social"><a class="social__link" href="#" title="Facebook"><img src="img/facebook.png" alt="alt"></a><a class="social__link" href="#" title="Twitter"><img src="img/twitter.png" alt="alt"></a><a class="social__link" href="#" title="Messenger"><img src="img/messenger.png" alt="alt"></a><a class="social__link" href="#" title="Facebook"><img src="img/ball.png" alt="alt"></a></div>
-          </div>
-        </div>
-        <div class="team-slider"><a class="team-slider__control" href="#"></a><a class="team-slider__control" href="#"></a><a class="team-slider__control" href="#"></a></div>
+        <ul class="team-list">
+          <li>
+            <div class="team-list__item">
+              <div class="team-list__img"><img src="img/member-1.png" alt="alt"></div>
+              <p class="team-list__name">John Doe</p>
+              <p class="team-list__job-title">General Manager</p>
+              <div class="social"><a class="social__link" href="#" title="Facebook"><img src="img/facebook.png" alt="alt"></a><a class="social__link" href="#" title="Twitter"><img src="img/twitter.png" alt="alt"></a><a class="social__link" href="#" title="Messenger"><img src="img/messenger.png" alt="alt"></a><a class="social__link" href="#" title="Facebook"><img src="img/ball.png" alt="alt"></a></div>
+            </div>
+          </li>
+          <li>
+            <div class="team-list__item">
+              <div class="team-list__img"><img src="img/member-2.png" alt="alt"></div>
+              <p class="team-list__name">Alexa Biru</p>
+              <p class="team-list__job-title">Office Director</p>
+              <div class="social"><a class="social__link" href="#" title="Facebook"><img src="img/facebook.png" alt="alt"></a><a class="social__link" href="#" title="Twitter"><img src="img/twitter.png" alt="alt"></a><a class="social__link" href="#" title="Messenger"><img src="img/messenger.png" alt="alt"></a><a class="social__link" href="#" title="Facebook"><img src="img/ball.png" alt="alt"></a></div>
+            </div>
+          </li>
+          <li>
+            <div class="team-list__item">
+              <div class="team-list__img"><img src="img/member-3.png" alt="alt"></div>
+              <p class="team-list__name">Ronobir sing</p>
+              <p class="team-list__job-title">Admin</p>
+              <div class="social"><a class="social__link" href="#" title="Facebook"><img src="img/facebook.png" alt="alt"></a><a class="social__link" href="#" title="Twitter"><img src="img/twitter.png" alt="alt"></a><a class="social__link" href="#" title="Messenger"><img src="img/messenger.png" alt="alt"></a><a class="social__link" href="#" title="Facebook"><img src="img/ball.png" alt="alt"></a></div>
+            </div>
+          </li>
+          <li>
+            <div class="team-list__item">
+              <div class="team-list__img"><img src="img/member-3.png" alt="alt"></div>
+              <p class="team-list__name">Ronobir sing</p>
+              <p class="team-list__job-title">Admin</p>
+              <div class="social"><a class="social__link" href="#" title="Facebook"><img src="img/facebook.png" alt="alt"></a><a class="social__link" href="#" title="Twitter"><img src="img/twitter.png" alt="alt"></a><a class="social__link" href="#" title="Messenger"><img src="img/messenger.png" alt="alt"></a><a class="social__link" href="#" title="Facebook"><img src="img/ball.png" alt="alt"></a></div>
+            </div>
+          </li>
+        </ul>
       </div>
     </section>
     <article class="blog sections-indent" id="scroll-blog">
@@ -296,6 +311,7 @@
       <p class="copyright">All rights Reserved © 2017</p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
